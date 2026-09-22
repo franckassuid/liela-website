@@ -1,0 +1,7 @@
+{
+  "name": "liela-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site de présentation Liela — application et future chaîne YouTube",
+  "scripts": { "dev": "node scripts/serve.mjs", "start": "node scripts/serve.mjs", "check": "node --check dist/app.js && node --check dist/site-config.js" }
+}

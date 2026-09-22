@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FDF9F0">
+  <title>Liela — La méditation qu’il vous faut, maintenant.</title>
+  <meta name="description" content="Une pause, à votre rythme. Découvrez Liela, l’application de méditation qui vous propose une séance pour le moment que vous traversez.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/poppins-light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="moon" viewBox="0 0 24 24"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></symbol>
+    <symbol id="waves" viewBox="0 0 24 24"><path d="M3 7c4-5 5 5 9 0s5 5 9 0M3 12c4-5 5 5 9 0s5 5 9 0M3 17c4-5 5 5 9 0s5 5 9 0"/></symbol>
+    <symbol id="focus" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M8 3H4v5m12-5h4v5M4 16v5h4m12-5v5h-4"/></symbol>
+    <symbol id="leaf" viewBox="0 0 24 24"><path d="M5 19C1 8 11 3 21 3c0 10-4 18-14 15M3 22 16 9"/></symbol>
+    <symbol id="home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v11h-7v-7h-4v7H3Z"/></symbol>
+    <symbol id="book" viewBox="0 0 24 24"><path d="M3 4h6l3 2 3-2h6v15h-6l-3 2-3-2H3Zm9 2v15"/></symbol>
+    <symbol id="headphones" viewBox="0 0 24 24"><path d="M3 14v-2a9 9 0 0 1 18 0v2M3 12h4v9H3Zm14 0h4v9h-4Z"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </defs></svg>
+
+  <header class="header">
+    <nav class="wrap nav" aria-label="Navigation principale">
+      <a class="brand" href="#accueil" aria-label="Liela, accueil"><img src="assets/logo.svg" width="117" height="40" alt="Liela"></a>
+      <div class="nav-links"><a href="#application">L’application</a><a href="#youtube">La chaîne YouTube</a><a href="#approche">L’esprit Liela</a></div>
+      <a class="button button-small" data-app-link href="https://app.liela.fr">Ouvrir Liela <svg class="icon"><use href="#arrow"/></svg></a>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="hero wrap" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-line"></span> UN PEU DE PLACE POUR VOUS</p>
+        <h1>La méditation<br>qu’il vous faut,<br><span>maintenant.</span></h1>
+        <p class="hero-description">Pas besoin de savoir par où commencer.<br> Liela vous propose une séance, pour le moment que vous traversez.</p>
+        <div class="hero-actions"><a class="button" data-app-link href="https://app.liela.fr">Prendre un moment pour moi <svg class="icon"><use href="#arrow"/></svg></a><a class="text-link" href="#application">Découvrir Liela <span aria-hidden="true">↓</span></a></div>
+        <p class="micro"><svg class="icon"><use href="#check"/></svg> Sans installation. Sans compte obligatoire.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="ambient-shape" aria-hidden="true"></div>
+        <div class="floating-note note-top"><svg class="icon"><use href="#sun"/></svg><span>Juste vous.<br><strong>Et quelques minutes.</strong></span></div>
+        <div class="phone" aria-label="Aperçu interactif de l’application Liela">
+          <div class="phone-status" aria-hidden="true"><span>9:41</span><span>••• ▰</span></div>
+          <div class="phone-top"><img src="assets/logo.svg" width="79" height="27" alt="Liela"><svg class="icon" aria-hidden="true"><use href="#sun"/></svg></div>
+          <div class="suggestion"><img src="assets/favicon.svg" width="17" height="17" alt=""> Une suggestion pour vous</div>
+          <div class="breathing-visual" aria-hidden="true"><span></span><span></span></div>
+          <div class="phone-session" aria-live="polite" aria-atomic="true"><p class="session-category" id="session-category">Calmer les pensées</p><h2 id="session-title">Sortir de<br>la boucle</h2><p class="session-context" id="session-context">Un peu d’espace, entre vous<br>et vos pensées.</p></div>
+          <a class="play-button" id="session-link" href="https://app.liela.fr/situation/calmer-les-pensees" aria-label="Découvrir les séances pour calmer les pensées dans Liela"><svg class="icon"><use href="#play"/></svg></a>
+          <p class="session-duration" id="session-duration">3 minutes pour vous</p>
+          <div class="phone-tabs" aria-hidden="true"><span class="selected"><svg class="icon"><use href="#home"/></svg>Accueil</span><span><svg class="icon"><use href="#book"/></svg>Bibliothèque</span><span><svg class="icon"><use href="#sun"/></svg>Réglages</span></div>
+        </div>
+        <div class="floating-note note-bottom"><svg class="icon"><use href="#headphones"/></svg><span>Une voix qui guide.<br><strong>Le reste peut attendre.</strong></span></div>
+        <span class="preview-caption">UN APERÇU DE VOTRE PROCHAINE PAUSE</span>
+      </div>
+    </section>
+
+    <section class="moment wrap" aria-labelledby="moment-title">
+      <div class="moment-label"><p class="eyebrow">ET LÀ, MAINTENANT ?</p><h2 id="moment-title">De quoi avez-vous besoin ?</h2></div>
+      <div class="situation-picker" aria-label="Changer l’aperçu de l’application">
+        <button data-situation="thoughts" aria-pressed="true">Calmer les pensées</button><button data-situation="stress" aria-pressed="false">Calmer le stress</button><button data-situation="sleep" aria-pressed="false">Trouver le sommeil</button><button data-situation="focus" aria-pressed="false">Me concentrer</button><button data-situation="tensions" aria-pressed="false">Relâcher les tensions</button><button data-situation="recenter" aria-pressed="false">Me recentrer</button>
+      </div>
+      <p class="picker-feedback" id="picker-feedback" role="status">À découvrir : Sortir de la boucle · 3 minutes</p>
+    </section>
+
+    <section class="application section" id="application">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">L’APPLICATION LIELA</p><h2>Moins de choix.<br><span>Plus de présence.</span></h2></div><p>Quand on a besoin de souffler, on n’a pas forcément envie de chercher. Ouvrez Liela : une séance vous attend déjà.</p></div>
+        <div class="intro-grid">
+          <article class="suggestion-card"><span class="mini-label"><svg class="icon"><use href="#moon"/></svg> LE BON MOMENT, C’EST LE VÔTRE</span><p class="quote">« Il est 22 h.<br>Et si vous laissiez<br>la journée derrière vous ? »</p><p>Une suggestion qui tient compte du moment de la journée et de vos écoutes précédentes.</p><span class="card-blob" aria-hidden="true"></span></article>
+          <div class="steps"><article><span class="step-number">01</span><div><h3>Ouvrez. C’est tout.</h3><p>Aucun questionnaire à remplir. Une proposition pour commencer, tout simplement.</p></div></article><article><span class="step-number">02</span><div><h3>Choisissez votre rythme.</h3><p>Quelques minutes ou une pause plus longue. Vous gardez la main, du début à la fin.</p></div></article><article><span class="step-number">03</span><div><h3>Laissez-vous guider.</h3><p>Une voix française posée, du silence, et de l’espace pour revenir à vous.</p></div></article></div>
+        </div>
+        <div class="situations-heading"><h3>Six façons de revenir à vous.</h3><span>Un point de départ pour chaque moment.</span></div>
+        <div class="situations-grid">
+          <a class="situation-card stress" data-app-path="/situation/calmer-le-stress" href="https://app.liela.fr/situation/calmer-le-stress"><svg class="icon"><use href="#waves"/></svg><h3>Calmer<br>le stress</h3><p>Faire redescendre la pression.</p><svg class="icon card-arrow"><use href="#arrow"/></svg></a>
+          <a class="situation-card sleep" data-app-path="/situation/trouver-le-sommeil" href="https://app.liela.fr/situation/trouver-le-sommeil"><svg class="icon"><use href="#moon"/></svg><h3>Trouver<br>le sommeil</h3><p>Laisser la journée derrière soi.</p><svg class="icon card-arrow"><use href="#arrow"/></svg></a>
+          <a class="situation-card thoughts" data-app-path="/situation/calmer-les-pensees" href="https://app.liela.fr/situation/calmer-les-pensees"><svg class="icon"><use href="#waves"/></svg><h3>Calmer<br>les pensées</h3><p>Faire un peu de place dans sa tête.</p><svg class="icon card-arrow"><use href="#arrow"/></svg></a>
+          <a class="situation-card focus" data-app-path="/situation/retrouver-sa-concentration" href="https://app.liela.fr/situation/retrouver-sa-concentration"><svg class="icon"><use href="#focus"/></svg><h3>Retrouver<br>sa concentration</h3><p>Revenir à une chose à la fois.</p><svg class="icon card-arrow"><use href="#arrow"/></svg></a>
+          <a class="situation-card tensions" data-app-path="/situation/relacher-les-tensions" href="https://app.liela.fr/situation/relacher-les-tensions"><svg class="icon"><use href="#sun"/></svg><h3>Relâcher<br>les tensions</h3><p>Offrir une pause à son corps.</p><svg class="icon card-arrow"><use href="#arrow"/></svg></a>
+          <a class="situation-card recenter" data-app-path="/situation/se-recentrer" href="https://app.liela.fr/situation/se-recentrer"><svg class="icon"><use href="#leaf"/></svg><h3>Se<br>recentrer</h3><p>Retrouver le moment présent.</p><svg class="icon card-arrow"><use href="#arrow"/></svg></a>
+        </div>
+        <div class="features"><article><svg class="icon"><use href="#headphones"/></svg><h3>Même hors connexion</h3><p>Téléchargez vos séances et emportez votre pause avec vous.</p></article><article><svg class="icon"><use href="#play"/></svg><h3>À votre rythme</h3><p>Une interruption ? Reprenez votre séance là où vous l’avez laissée.</p></article><article><svg class="icon"><use href="#book"/></svg><h3>Vos repères, au même endroit</h3><p>Retrouvez vos favoris et votre historique sans chercher à nouveau.</p></article></div>
+      </div>
+    </section>
+
+    <section class="youtube-section section" id="youtube"><div class="wrap youtube-grid">
+      <div class="youtube-art" aria-label="Liela Méditation, bientôt sur YouTube"><span class="video-wordmark">liela</span><span class="coming-badge">BIENTÔT SUR YOUTUBE</span><div class="video-orbit" aria-hidden="true"></div><div class="video-title">Une pause.<br>Un souffle.<br><span>Un peu de vous.</span></div><span class="video-footer">MÉDITATIONS GUIDÉES <svg class="icon"><use href="#headphones"/></svg></span></div>
+      <div class="youtube-copy"><p class="eyebrow">LA PRATIQUE CONTINUE</p><h2>Le même esprit.<br><span>Un autre rendez-vous.</span></h2><p>Liela Méditation arrive bientôt sur YouTube. Un autre endroit pour faire une pause et vous laisser guider, simplement.</p><p>En attendant les premières vidéos, retrouvez les séances dans l’application.</p><a class="button button-outline" data-app-link href="https://app.liela.fr">Découvrir les séances <svg class="icon"><use href="#arrow"/></svg></a><a class="button" id="youtube-link" hidden>Découvrir la chaîne <svg class="icon"><use href="#arrow"/></svg></a></div>
+    </div></section>
+
+    <section class="approach section" id="approche"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">L’ESPRIT LIELA</p><h2>Rien à réussir.<br><span>Juste être là.</span></h2></div><p>La méditation n’a pas besoin d’en faire trop. Ici, on pratique simplement, sans mysticisme ni promesse de transformation.</p></div><div class="principles"><article><span>01 /</span><h3>Les pensées ont leur place.</h3><p>L’esprit s’égare, et c’est normal. Vous apprenez à le remarquer et à revenir, sans vous juger.</p></article><article><span>02 /</span><h3>Votre souffle, comme il est.</h3><p>Pas besoin de forcer la respiration. Si elle n’est pas un point d’appui confortable, vous pouvez en choisir un autre.</p></article><article><span>03 /</span><h3>Le silence fait partie du voyage.</h3><p>Des pauses pour ressentir et pratiquer. Pas des espaces à remplir à tout prix.</p></article></div></div></section>
+
+    <section class="faq-section section wrap" id="questions"><div><p class="eyebrow">AVANT DE COMMENCER</p><h2>Quelques questions.<br><span>En toute simplicité.</span></h2><p>Et si on levait les derniers doutes ?</p></div><div class="faq">
+      <details><summary>Faut-il installer une application ?<span aria-hidden="true">+</span></summary><p>Liela s’ouvre directement dans votre navigateur. Vous pouvez aussi l’ajouter à votre écran d’accueil pour la retrouver comme une application.</p></details>
+      <details><summary>Dois-je créer un compte ?<span aria-hidden="true">+</span></summary><p>Vous pouvez utiliser Liela sans compte. Un compte permet de retrouver vos favoris et votre historique sur plusieurs appareils.</p></details>
+      <details><summary>Je n’ai jamais médité. C’est pour moi ?<span aria-hidden="true">+</span></summary><p>Oui. Les séances vous guident pas à pas. Vous n’avez pas besoin de faire le vide dans votre tête ni de tenir une posture particulière. Installez-vous simplement de façon confortable.</p></details>
+      <details><summary>Est-ce que je peux écouter hors connexion ?<span aria-hidden="true">+</span></summary><p>Oui, après avoir téléchargé une séance depuis l’application. Pensez à le faire avant de partir dans un endroit sans réseau.</p></details>
+      <details><summary>Où trouver la chaîne YouTube ?<span aria-hidden="true">+</span></summary><p id="youtube-faq">La chaîne Liela Méditation est en préparation. Son lien et les premières vidéos seront ajoutés ici dès son lancement.</p></details>
+      <details><summary>Liela remplace-t-elle un suivi médical ?<span aria-hidden="true">+</span></summary><p>Non. Liela propose des séances de méditation et de relaxation à visée de bien-être. Elles ne constituent ni un diagnostic ni un traitement et ne remplacent pas l’accompagnement d’un professionnel de santé.</p></details>
+    </div></section>
+
+    <section class="closing"><div class="wrap"><svg class="icon" aria-hidden="true"><use href="#leaf"/></svg><p class="eyebrow">VOUS POUVEZ COMMENCER ICI</p><h2>Le reste peut attendre<br><span>quelques minutes.</span></h2><p>Une séance vous attend. Prenez ce moment pour vous.</p><a class="button button-light" data-app-link href="https://app.liela.fr">Ouvrir Liela <svg class="icon"><use href="#arrow"/></svg></a></div></section>
+  </main>
+  <footer class="wrap footer"><div class="footer-top"><a class="brand" href="#accueil" aria-label="Retour à l’accueil"><img src="assets/logo.svg" width="117" height="40" alt="Liela"></a><p>Un peu de calme.<br>À votre façon.</p><nav aria-label="Navigation de pied de page"><a href="#application">L’application</a><a href="#youtube">Bientôt sur YouTube</a><a href="#approche">L’esprit Liela</a><a href="#questions">Questions fréquentes</a></nav></div><div class="footer-bottom"><p>Les séances Liela accompagnent votre bien-être et ne remplacent pas un suivi médical.</p><span>© <span id="year">2026</span> Liela</span></div></footer>
+</body>
+</html>
